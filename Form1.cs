@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -131,7 +131,7 @@ namespace My_Rakhivnytsia
             //
             PassBox = new TextBox();
             PassBox.Visible = true;
-            PassBox.PasswordChar = '*';
+            PassBox.PasswordChar = '●';
             PassBox.Location = new Point(400, 400);
             PassBox.Width = 400;
             PassBox.Font = LabelFont;
@@ -223,7 +223,7 @@ string query = "SELECT [Логін], [Password] FROM Users_Table";
             // Створення нового паролю - створення поля введення паролю
             PassBox = new TextBox();
             PassBox.Visible = true;
-            PassBox.PasswordChar = '*'; // відображення введених символів паролю одним символом '*'
+            PassBox.PasswordChar = '●'; // відображення введених символів паролю одним символом '●'
             PassBox.Location = new Point(250, 200);
             PassBox.Width = 250;
             PassBox.Font = LoginFont;
@@ -243,7 +243,7 @@ string query = "SELECT [Логін], [Password] FROM Users_Table";
             // Підтвердження введеного паролю - створення поля введення підтвердженого паролю
             PassConfBox = new TextBox();
             PassConfBox.Visible = true;
-            PassConfBox.PasswordChar = '*'; // відображення введених символів паролю одним символом '*'
+            PassConfBox.PasswordChar = '●'; // відображення введених символів паролю одним символом '●'
             PassConfBox.Location = new Point(350, 300);
             PassConfBox.Width = 250;
             PassConfBox.Font = LoginFont;
@@ -346,7 +346,7 @@ string query = "SELECT [Логін], [Password] FROM Users_Table";
             }
             else
             {
-                MessageBox.Show("Заповніть всі поля форми!");
+                MessageBox.Show("Заповніть всі поля форми або введіть правильний пароль!");
             }
 
 
@@ -535,7 +535,7 @@ DataSet ds = new DataSet();
                 // Введення суми платежу - створення поля введення імені користувача
                 PassConfBox = new TextBox();
                 PassConfBox.Visible = true;
-                PassConfBox.PasswordChar = '*';
+                PassConfBox.PasswordChar = '●';
                 PassConfBox.Location = new Point(250, 100);
                 PassConfBox.Font = LabelFont;
                 PassConfBox.Width = 250;
@@ -732,6 +732,7 @@ DataSet ds = new DataSet();
 // Введення суми платежу - створення поля введення імені користувача
                 PassConfBox = new TextBox();
                 PassConfBox.Visible = true;
+                PassConfBox.PasswordChar = '●';
                 PassConfBox.Location = new Point(250, 100);
                 PassConfBox.Width = 250;
                 panel1.Controls.Add(PassConfBox);
